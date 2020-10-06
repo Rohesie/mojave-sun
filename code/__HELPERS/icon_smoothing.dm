@@ -479,7 +479,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	canSmoothWith = null
 
 /atom/proc/plus_smooth(adjacencies)
-	var/normalizedAdjacencies = (adjacencies & N_NORTH)|(adjacencies & N_SOUTH)|(adjacencies & N_EAST)|(adjacencies & N_WEST)
+	var/normalizedAdjacencies = (adjacencies & NORTH_JUNCTION)|(adjacencies & SOUTH_JUNCTION)|(adjacencies & EAST_JUNCTION)|(adjacencies & WEST_JUNCTION)
 	icon_state = "[src.icon_type_smooth][normalizedAdjacencies]"
 
 

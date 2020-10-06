@@ -11,7 +11,8 @@
 #define SMOOTH_QUEUED	(1<<4)
 /// Smooths with objects, and will thus need to scan turfs for contents.
 #define SMOOTH_OBJ		(1<<5)
-#define SMOOTH_SIMPLE	(1<<3)  // legacy support for older style icons - these should be ported to smooth_corners. Use icon_type_smooth for base icon
+/// Legacy support for older style icons - these should be ported to smooth_corners. Use icon_type_smooth for base icon
+#define SMOOTH_SIMPLE	(1<<6) 
 
 DEFINE_BITFIELD(smoothing_flags, list(
 	"SMOOTH_CORNERS" = SMOOTH_CORNERS,
@@ -92,22 +93,22 @@ DEFINE_BITFIELD(smoothing_flags, list(
 #define SMOOTH_GROUP_PLASTITANIUM_WALLS S_OBJ(13)		///turf/closed/wall/mineral/plastitanium, /obj/structure/falsewall/plastitanium
 #define SMOOTH_GROUP_SURVIVAL_TIANIUM_POD S_OBJ(14)		///turf/closed/wall/mineral/titanium/survival/pod, /obj/machinery/door/airlock/survival_pod, /obj/structure/window/shuttle/survival_pod
 #define SMOOTH_GROUP_HIERO_WALL S_OBJ(15)				///obj/effect/temp_visual/elite_tumor_wall, /obj/effect/temp_visual/hierophant/wall
-#define SMOOTH_GROUP_FALLOUT_WALL S_OBJ(15)				///obj/structure/table/low_wall, /turf/closed/wall/f13
-#define SMOOTH_GROUP_FALLOUT_WALL_METAL S_OBJ(16)		///obj/structure/table/low_wall/metal, /turf/closed/wall/f13/metal
-#define SMOOTH_GROUP_FALLOUT_WALL_WOOD S_OBJ(17)		///obj/structure/table/low_wall/wood, /turf/closed/wall/f13/wood
-#define SMOOTH_GROUP_FALLOUT_WALL_SCRAP S_OBJ(18)		///obj/structure/table/low_wall/scrap, /turf/closed/wall/f13/scrap
-#define SMOOTH_GROUP_FALLOUT_WALL_ADOBE S_OBJ(19)		///obj/structure/table/low_wall/adobe, /turf/closed/wall/f13/adobe
-#define SMOOTH_GROUP_FALLOUT_WALL_BRICK S_OBJ(20)		///obj/structure/table/low_wall/brick, /turf/closed/wall/f13/brick
-#define SMOOTH_GROUP_FALLOUT_WALL_REINFORCED S_OBJ(21)	///obj/structure/table/low_wall/reinforced, /turf/closed/wall/r_wall/f13
-#define SMOOTH_GROUP_FALLOUT_MINERALS S_OBJ(22)			///turf/closed/mineral/random/f13, /turf/closed/indestructible/rock/f13
-#define SMOOTH_GROUP_FALLOUT_WINDOW S_OBJ(23)			///obj/structure/window/fulltile/f13/glass
+#define SMOOTH_GROUP_FALLOUT_WALL S_OBJ(16)				///obj/structure/table/low_wall, /turf/closed/wall/f13
+#define SMOOTH_GROUP_FALLOUT_WALL_METAL S_OBJ(17)		///obj/structure/table/low_wall/metal, /turf/closed/wall/f13/metal
+#define SMOOTH_GROUP_FALLOUT_WALL_WOOD S_OBJ(18)		///obj/structure/table/low_wall/wood, /turf/closed/wall/f13/wood
+#define SMOOTH_GROUP_FALLOUT_WALL_SCRAP S_OBJ(19)		///obj/structure/table/low_wall/scrap, /turf/closed/wall/f13/scrap
+#define SMOOTH_GROUP_FALLOUT_WALL_ADOBE S_OBJ(20)		///obj/structure/table/low_wall/adobe, /turf/closed/wall/f13/adobe
+#define SMOOTH_GROUP_FALLOUT_WALL_BRICK S_OBJ(21)		///obj/structure/table/low_wall/brick, /turf/closed/wall/f13/brick
+#define SMOOTH_GROUP_FALLOUT_WALL_REINFORCED S_OBJ(22)	///obj/structure/table/low_wall/reinforced, /turf/closed/wall/r_wall/f13
+#define SMOOTH_GROUP_FALLOUT_MINERALS S_OBJ(23)			///turf/closed/mineral/random/f13, /turf/closed/indestructible/rock/f13
+#define SMOOTH_GROUP_FALLOUT_WINDOW S_OBJ(24)			///obj/structure/window/fulltile/f13/glass
 
-#define SMOOTH_GROUP_PAPERFRAME S_OBJ(20)				///obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe
+#define SMOOTH_GROUP_PAPERFRAME S_OBJ(25)				///obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe
 
-#define SMOOTH_GROUP_WINDOW_FULLTILE S_OBJ(21)			///turf/closed/indestructible/fakeglass, /obj/structure/window/fulltile, /obj/structure/window/reinforced/fulltile, /obj/structure/window/reinforced/tinted/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/window/plasma/reinforced/fulltile
-#define SMOOTH_GROUP_WINDOW_FULLTILE_BRONZE S_OBJ(22)	///obj/structure/window/bronze/fulltile
-#define SMOOTH_GROUP_WINDOW_FULLTILE_PLASTITANIUM S_OBJ(23)	///turf/closed/indestructible/opsglass, /obj/structure/window/plasma/reinforced/plastitanium
-#define SMOOTH_GROUP_WINDOW_FULLTILE_SHUTTLE S_OBJ(24)	///obj/structure/window/shuttle
+#define SMOOTH_GROUP_WINDOW_FULLTILE S_OBJ(26)			///turf/closed/indestructible/fakeglass, /obj/structure/window/fulltile, /obj/structure/window/reinforced/fulltile, /obj/structure/window/reinforced/tinted/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/window/plasma/reinforced/fulltile
+#define SMOOTH_GROUP_WINDOW_FULLTILE_BRONZE S_OBJ(27)	///obj/structure/window/bronze/fulltile
+#define SMOOTH_GROUP_WINDOW_FULLTILE_PLASTITANIUM S_OBJ(28)	///turf/closed/indestructible/opsglass, /obj/structure/window/plasma/reinforced/plastitanium
+#define SMOOTH_GROUP_WINDOW_FULLTILE_SHUTTLE S_OBJ(29)	///obj/structure/window/shuttle
 
 #define SMOOTH_GROUP_LATTICE  S_OBJ(30)					///obj/structure/lattice
 
