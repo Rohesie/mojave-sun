@@ -11,8 +11,7 @@
 #define SMOOTH_QUEUED	(1<<4)
 /// Smooths with objects, and will thus need to scan turfs for contents.
 #define SMOOTH_OBJ		(1<<5)
-/// Legacy support for older style icons - these should be ported to smooth_corners. Use icon_type_smooth for base icon
-#define SMOOTH_SIMPLE	(1<<6) 
+
 
 DEFINE_BITFIELD(smoothing_flags, list(
 	"SMOOTH_CORNERS" = SMOOTH_CORNERS,

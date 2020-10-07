@@ -154,9 +154,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	smoothing_flags &= ~SMOOTH_QUEUED
 	if (!z)
 		CRASH("[type] called smooth_icon() without being on a z-level")
-	if(smoothing_flags & SMOOTH_SIMPLE)
-		plus_smooth(calculate_adjacencies()) /* pick a better name */
-	else if(smoothing_flags & SMOOTH_CORNERS)
+	if(smoothing_flags & SMOOTH_CORNERS)
 		if(smoothing_flags & SMOOTH_DIAGONAL_CORNERS)
 			corners_diagonal_smooth(calculate_adjacencies())
 		else
@@ -477,10 +475,6 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	smoothing_flags = SMOOTH_CORNERS|SMOOTH_DIAGONAL_CORNERS|SMOOTH_BORDER
 	smoothing_groups = null
 	canSmoothWith = null
-
-/atom/proc/plus_smooth(adjacencies)
-	var/normalizedAdjacencies = (adjacencies & NORTH_JUNCTION)|(adjacencies & SOUTH_JUNCTION)|(adjacencies & EAST_JUNCTION)|(adjacencies & WEST_JUNCTION)
-	icon_state = "[src.icon_type_smooth][normalizedAdjacencies]"
 
 
 #undef NORTH_JUNCTION
